@@ -35,6 +35,10 @@ def get_user_settings():
                 'Stoploss':float( row['Stoploss']),
                 'Target': float(row['Target']),
                 'Lotsize': float(row['Lotsize']),
+                'InitialTrade':None,
+                'CurrTradeBuyLevel':None,
+                'CurrTradeSellLevel': None,
+                'Orders': []
             }
             result_dict[row['Symbol']] = symbol_dict
         print(result_dict)
@@ -73,7 +77,74 @@ def main_strategy():
     global result_dict
     try:
         for symbol, params in result_dict.items():
-            pass
+            symr = trade.get_data(symbol=symbol, timeframe="TIMEFRAME_M5")
+            open = float(symr[0][1])
+            high = float(symr[0][2])
+            low = float(symr[0][3])
+            close = float(symr[0][4])
+            if (
+                    params['InitialTrade'] == None and
+                    close >= params['SellAbove']
+            ):
+                params['InitialTrade'] ="SHORT"
+                params['CurrTradeBuyLevel'] = params['SellAbove']-params['NextBuyPts']
+                params['CurrTradeSellLevel'] = params['SellAbove']+params['NextSellPts']
+                res= trade.mt_short(symbol=symbol, lot=float(params['Lotsize']), MagicNumber=int(params['MagicNumber']))
+
+                trade_log = {
+                            'OrderId': res,
+                            'couplebuylevel': params['CurrTradeBuyLevel'],
+                            'coupleselllevel': None
+                        }
+
+                params['Orders'].append(trade_log)
+                print("result_dict: ",result_dict)
+                Oederog=f"Sell trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel'] } "
+                print(Oederog)
+                write_to_order_logs(Oederog)
+
+
+
+            if (
+                    params['InitialTrade'] == None and
+                    close <= params['BuyBelow']
+            ):
+                params['InitialTrade'] ="BUY"
+                params['CurrTradeBuyLevel'] = params['BuyBelow'] - params['NextBuyPts']
+                params['CurrTradeSellLevel'] = params['BuyBelow'] + params['NextSellPts']
+                res=trade.mt_buy(symbol=symbol, lot=float(params['Quantity']), MagicNumber=int(params['MagicNumber']))
+
+                trade_log = {
+                    'OrderId': res,
+                    'couplebuylevel': None,
+                    'coupleselllevel': params['CurrTradeSellLevel']
+                }
+
+                params['Orders'].append(trade_log)
+                print("result_dict: ", result_dict)
+                Oederog = f"Buy trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                print(Oederog)
+                write_to_order_logs(Oederog)
+
+            for order in params['Orders']:
+                order_id = order['OrderId']
+                couple_buy_level = order['couplebuylevel']
+                couple_sell_level = order['coupleselllevel']
+
+                if params['InitialTrade'] =="SHORT":
+                    if close<=couple_buy_level:
+                        Oederog = f" Couple Buy trade executed @ {symbol} @ {close} target sl modified for sell order id {order_id} "
+                        print(Oederog)
+                        write_to_order_logs(Oederog)
+
+                if params['InitialTrade'] == "BUY":
+                    if close >= couple_sell_level:
+                        Oederog = f" Couple Sell trade executed @ {symbol} @ {close} target sl modified for Buy order id {order_id} "
+                        print(Oederog)
+                        write_to_order_logs(Oederog)
+
+
+
 
     except Exception as e:
         print("Error happened in Main strategy loop: ", str(e))
@@ -81,6 +152,13 @@ def main_strategy():
 
 
 def write_to_order_logs(message):
-    with open('MachineLogs.txt', 'a') as file:  # Open the file in append mode
+    with open('OrderLogs.txt', 'a') as file:  # Open the file in append mode
         file.write(message + '\n')
-#
+
+
+
+
+# res= trade.mt_buy(symbol="BTCUSD",lot=0.1,MagicNumber=12345)
+# print(res)
+while True:
+    main_strategy()

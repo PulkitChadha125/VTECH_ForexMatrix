@@ -1,0 +1,8 @@
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+can only concatenate tuple (not "str") to tuple
+can only concatenate tuple (not "str") to tuple
+can only concatenate tuple (not "str") to tuple

@@ -162,9 +162,9 @@ def current_bid(symbol):
 
 
 def mt_buy(symbol,lot,MagicNumber):
-    try:
         price = mt.symbol_info_tick(symbol).ask
         point = mt.symbol_info(symbol).point
+        print(price)
         request = {
             "action": mt.TRADE_ACTION_DEAL,
             "symbol": symbol,
@@ -177,20 +177,14 @@ def mt_buy(symbol,lot,MagicNumber):
             "type_filling": mt.ORDER_FILLING_IOC,
         }
         result = mt.order_send(request)
-        print("result: ",result)
-
-        write_to_order_logs(result)
-    except Exception as e:
-        print(" error occurred while placing buy order:", str(e))
-        write_to_order_logs(str(e))
-
-
+        order_id = result.order
+        print("result: ", result)
+        return order_id
 
 
 
 
 def mt_short(symbol,lot,MagicNumber):
-    try:
         price = mt.symbol_info_tick(symbol).bid
         point = mt.symbol_info(symbol).point
         request = {
@@ -205,14 +199,13 @@ def mt_short(symbol,lot,MagicNumber):
             "type_filling": mt.ORDER_FILLING_IOC,
         }
         result = mt.order_send(request)
+        order_id = result.order
         print("result: ", result)
-        write_to_order_logs(result)
-    except Exception as e:
-        print(" error occurred while placing sell order:", str(e))
-        write_to_order_logs(str(e))
+        return order_id
+
 
 def mt_close_buy(symbol,lot,orderid,timestamp):
-    try:
+
         price = mt.symbol_info_tick(symbol).bid
         request = {
             "action": mt.TRADE_ACTION_DEAL,
@@ -229,10 +222,8 @@ def mt_close_buy(symbol,lot,orderid,timestamp):
         print(result)
         orderlog = f"{timestamp} {result}"
         print(orderlog)
-        write_to_order_logs(orderlog)
-    except Exception as e:
-        print(" error occurred while closing buy order:", str(e))
-        write_to_order_logs(str(e))
+
+
 
 
 def mt_close_sell(symbol,lot,orderid,timestamp):
