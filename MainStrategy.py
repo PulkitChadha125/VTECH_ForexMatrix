@@ -126,22 +126,66 @@ def main_strategy():
                 print(Oederog)
                 write_to_order_logs(Oederog)
 
+            if params['InitialTrade'] =="SHORT":
+                if close>= params['CurrTradeSellLevel']:
+                    params['CurrTradeBuyLevel'] = close - params['NextBuyPts']
+                    params['CurrTradeSellLevel'] = close + params['NextSellPts']
+                    res = trade.mt_short(symbol=symbol, lot=float(params['Lotsize']),
+                                         MagicNumber=int(params['MagicNumber']))
+
+                    trade_log = {
+                        'OrderId': res,
+                        'couplebuylevel': params['CurrTradeBuyLevel'],
+                        'coupleselllevel': None
+                    }
+
+                    params['Orders'].append(trade_log)
+                    print("result_dict: ", result_dict)
+                    Oederog = f"Sell trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                    print(Oederog)
+                    write_to_order_logs(Oederog)
+
+
+            if params['InitialTrade'] == "BUY":
+                if close <= params['CurrTradeBuyLevel']:
+                    params['CurrTradeBuyLevel'] = close - params['NextBuyPts']
+                    params['CurrTradeSellLevel'] = close + params['NextSellPts']
+                    res = trade.mt_buy(symbol=symbol, lot=float(params['Quantity']), MagicNumber=int(params['MagicNumber']))
+
+                    trade_log = {
+                        'OrderId': res,
+                        'couplebuylevel': None,
+                        'coupleselllevel': params['CurrTradeSellLevel']
+                    }
+
+                    params['Orders'].append(trade_log)
+                    print("result_dict: ", result_dict)
+                    Oederog = f"Buy trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                    print(Oederog)
+                    write_to_order_logs(Oederog)
+
             for order in params['Orders']:
                 order_id = order['OrderId']
                 couple_buy_level = order['couplebuylevel']
                 couple_sell_level = order['coupleselllevel']
 
                 if params['InitialTrade'] =="SHORT":
-                    if close<=couple_buy_level:
+                    if close<=couple_buy_level and couple_buy_level>0:
+                        couple_buy_level=0
+                        order['couplebuylevel']=0
                         Oederog = f" Couple Buy trade executed @ {symbol} @ {close} target sl modified for sell order id {order_id} "
                         print(Oederog)
                         write_to_order_logs(Oederog)
+                        params['Orders'].remove(order)
 
                 if params['InitialTrade'] == "BUY":
-                    if close >= couple_sell_level:
+                    if close >= couple_sell_level and couple_sell_level>0:
+                        couple_sell_level=0
+                        order['coupleselllevel']=0
                         Oederog = f" Couple Sell trade executed @ {symbol} @ {close} target sl modified for Buy order id {order_id} "
                         print(Oederog)
                         write_to_order_logs(Oederog)
+                        params['Orders'].remove(order)
 
 
 
