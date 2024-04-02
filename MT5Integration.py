@@ -7,7 +7,7 @@ import traceback
 # Password="Forex@123"
 # Server="VantageInternational-Demo"
 def write_to_order_logs(message):
-    with open('MachineLogs.txt', 'a') as file:  # Open the file in append mode
+    with open('OrderLogs.txt', 'a') as file:  # Open the file in append mode
         file.write(message + '\n')
 
 def login (Login,Password,Server):
@@ -94,56 +94,6 @@ def checking ():
     human_readable_time = datetime.fromtimestamp(timestamp, pytz.timezone("Europe/Athens"))
     print("Human Readable Time:", human_readable_time)
 
-
-
-
-
-
-
-
-
-# def get_data(symbol, timeframe):
-#
-#     try:
-#         if timeframe=='TIMEFRAME_M1':
-#             timeframe=mt.TIMEFRAME_M1
-#         elif timeframe=='TIMEFRAME_M2':
-#             timeframe=mt.TIMEFRAME_M2
-#         elif timeframe=='TIMEFRAME_M5':
-#             timeframe=mt.TIMEFRAME_M5
-#         elif timeframe=='TIMEFRAME_M15':
-#             timeframe=mt.TIMEFRAME_M15
-#
-#
-#
-#
-#         end_date = datetime.now(pytz.timezone("Etc/UTC")).replace(hour=datetime.now().hour, minute=datetime.now().minute, second=datetime.now().second, microsecond=0)
-#         end_date_utc = datetime.now(pytz.timezone("Etc/UTC"))
-#
-#         start_date = end_date_utc.astimezone(
-#             pytz.timezone("Europe/Athens")) - timedelta(hours=5)
-#         end_date_gmt2 = end_date_utc.astimezone(
-#             pytz.timezone("Europe/Athens"))  # Replace "Europe/Athens" with the desired timezone
-#
-#         # Convert end_date to GMT+3
-#         end_date_gmt3 = end_date_utc.astimezone(
-#             pytz.timezone("Europe/Istanbul"))  # Replace "Europe/Istanbul" with the desired timezone
-#
-#         # print("end_date (UTC): ", end_date_utc)
-#         print("start_date (GMT+2): ", start_date)
-#         print("end_date (GMT+2): ", end_date_gmt2)
-#         print("end_date (GMT+3): ", end_date_gmt3)
-#
-#
-#         OHLC_DATA = pd.DataFrame(mt.copy_rates_range(symbol, timeframe, start_date, end_date_gmt3))
-#         OHLC_DATA['time'] = pd.to_datetime(OHLC_DATA['time'], unit='s')
-#         OHLC_DATA.to_csv("data.csv")
-#         return OHLC_DATA
-#     except Exception as e:
-#         print("An error occurred while fetching data:", str(e))
-#         traceback.print_exc()
-
-
 def get_open_position():
     try:
         result=mt.positions_get()
@@ -154,7 +104,6 @@ def get_open_position():
 
 
 def current_ask(symbol):
-
     return mt.symbol_info_tick(symbol).ask
 
 def current_bid(symbol):
@@ -181,8 +130,59 @@ def mt_buy(symbol,lot,MagicNumber):
         print("result: ", result)
         return order_id
 
+def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp):
+    global mt
+    price = mt.symbol_info_tick(symbol).ask
+    point = mt.symbol_info(symbol).point
+    print("sl", sl)
+    print("tp", tp)
+    print("symbol", symbol)
+    print("lot", lot)
+    request = {
+            "action": mt.TRADE_ACTION_DEAL,
+            "symbol": symbol,
+            "volume": lot,
+            "type": mt.ORDER_TYPE_BUY,
+            "price": price,
+            "sl": price - sl,
+            "tp": price + tp,
+            "magic": MagicNumber,
+            "comment": "python buy order",
+            "type_time": mt.ORDER_TIME_GTC,
+            "type_filling": mt.ORDER_FILLING_IOC,
+        }
+    result = mt.order_send(request)
+    print("Brcket res", result)
+    order_id = result.order
+    print("result: ", result)
+    return order_id
 
 
+def mt_sell_bracket(symbol,lot,MagicNumber,sl,tp):
+    global mt
+    price = mt.symbol_info_tick(symbol).bid
+    print("sl",sl)
+    print("tp", tp)
+    print("symbol", symbol)
+    print("lot", lot)
+    request = {
+            "action": mt.TRADE_ACTION_DEAL,
+            "symbol": symbol,
+            "volume": lot,
+            "type": mt.ORDER_TYPE_SELL,
+            "price": price,
+            "sl": price + sl,
+            "tp": price - tp,
+            "magic": MagicNumber,
+            "comment": "python sell order",
+            "type_time": mt.ORDER_TIME_GTC,
+            "type_filling": mt.ORDER_FILLING_IOC,
+        }
+    result = mt.order_send(request)
+    print("Brcket res",result)
+    order_id = result.order
+    print("result: ", result)
+    return order_id
 
 def mt_short(symbol,lot,MagicNumber):
         price = mt.symbol_info_tick(symbol).bid
@@ -251,8 +251,52 @@ def mt_close_sell(symbol,lot,orderid,timestamp):
 
 
 
+def changeslpl(ticket,pair,pos_type,SL,tp,ea_magic_number,volume):
+    global mt
+    p_open = mt.positions_get(ticket=ticket)
+    price_open = p_open[0].price_open
+    print("price_open: ",price_open)
+    print("sl", SL)
+    print("tp", tp)
+    print("symbol", pair)
+    print("lot", volume)
+    if pos_type=="BUY":
+        pos_type=mt.ORDER_TYPE_BUY
+        stoploss=price_open-SL
+        target=price_open+tp
+        Oederog = f" { ticket }, {pos_type} order new Target = {target},new stoploss= {stoploss}"
+        print(Oederog)
+        write_to_order_logs(Oederog)
+    if pos_type=="SHORT":
+        pos_type = mt.ORDER_TYPE_SELL
+        stoploss=price_open+SL
+        target = price_open - tp
+        Oederog = f" { ticket } , {pos_type} ordernew Target = {target},new stoploss= {stoploss}"
+        print(Oederog)
+        write_to_order_logs(Oederog)
 
 
+    request = {
+    "action": mt.TRADE_ACTION_SLTP,
+    "symbol": pair,
+    "volume": volume,
+    "type": pos_type,
+    "position": ticket,
+    "price_open": price_open,
+    "sl": stoploss,
+    "tp": target,
+    "deviation": 20,
+    "magic": ea_magic_number,
+    "comment": "python script open",
+    "type_time": mt.ORDER_TIME_GTC,
+    "type_filling": mt.ORDER_FILLING_FOK,
+    "ENUM_ORDER_STATE": mt.ORDER_FILLING_RETURN,
+    }
+    print(request)
+#// perform the check and display the result 'as is'
+    result = mt.order_send(request)
+    print("Result: ",result)
+    return result
 
 
 # def get_data(symbol,timeframe=mt.TIMEFRAME_M1):

@@ -1,131 +1,62 @@
-Sell trade executed @ BTCUSD @ 69351.29, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69352.31, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69352.31, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69349.18, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69349.18, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69346.84, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69346.84, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69351.97, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69351.97, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69353.65, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69360.09, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69360.09, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69352.9, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69313.05, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69313.05, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69313.05, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69314.1, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69314.1, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69348.05, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69349.58, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69349.58, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69348.75, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69348.75, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69348.75, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69348.54, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69348.54, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69346.37, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69354.01, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69356.54, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69358.93, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69358.93, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69415.48, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69424.49, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69424.49, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69435.26, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69435.26, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69427.07, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69419.75, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69419.75, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69419.75, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69418.45, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69497.89, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69497.89, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69497.89, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69502.26, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69488.12, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69488.12, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69488.12, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69485.39, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69477.19, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69473.81, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69473.81, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69476.46, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69476.46, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69476.46, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69478.12, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69478.12, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69479.0, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69479.0, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69475.68, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69475.68, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69475.68, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69475.6, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69475.6, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69475.6, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69478.55, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69478.55, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69484.64, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69477.33, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69482.83, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
-Sell trade executed @ BTCUSD @ 69487.64, next buy=nan, next sell=nan 
-Sell trade executed @ XAUUSD @ 2232.72, next buy=nan, next sell=nan 
+31/03/2024 00:07:09 Sell trade executed @ BTCUSD @ 70002.27, next buy=68890.0, next sell=68990.0 
+31/03/2024 00:07:09 Sell trade executed @ BTCUSD @ 70002.27, next buy=69952.27, next sell=70052.27 
+31/03/2024 00:08:12 Sell trade executed @ BTCUSD @ 70002.95, next buy=69950.0, next sell=70050.0 
+02/04/2024 13:07:29 Buy trade executed @ BTCUSD @ 66588.44, next buy=66500.0, next sell=66700.0 
+02/04/2024 13:08:49 Buy trade executed @ BTCUSD @ 66492.09, next buy=66392.09, next sell=66592.09 
+ 140179981, 0 order new Target = 66747.64,new stoploss= 66447.64
+02/04/2024 13:09:17 Couple Sell trade executed @ BTCUSD @ 66593.64 target sl modified for Buy order id 140179981 
+02/04/2024 13:14:26 Sell trade executed @ BTCUSD @ 66600.6, next buy=66500.0, next sell=66700.0 
+ 140181396 , 1 ordernew Target = 66400.6,new stoploss= 66700.6
+02/04/2024 13:16:10 Couple Buy trade executed @ BTCUSD @ 66498.76 target sl modified for sell order id 140181396 
+02/04/2024 13:22:44 Buy trade executed @ BTCUSD @ 66495.75, next buy=66400.0, next sell=66600.0 
+ 140185491, 0 order new Target = 66728.15,new stoploss= 66428.15
+02/04/2024 13:23:43 Couple Sell trade executed @ BTCUSD @ 66603.47 target sl modified for Buy order id 140185491 
+02/04/2024 13:26:53 Buy trade executed @ BTCUSD @ 66499.29, next buy=66400.0, next sell=66600.0 
+ 140186618, 0 order new Target = 66724.56,new stoploss= 66424.56
+02/04/2024 13:32:03 Couple Sell trade executed @ BTCUSD @ 66600.97 target sl modified for Buy order id 140186618 
+02/04/2024 14:44:38 Sell trade executed @ BTCUSD @ 66198.28, next buy=66100.0, next sell=66200.0 
+02/04/2024 14:44:39 Sell trade executed @ BTCUSD @ 66202.15, next buy=66152.15, next sell=66252.15 
+ 140222931 , 1 ordernew Target = 66107.99,new stoploss= 66257.99
+02/04/2024 14:44:43 Couple Buy trade executed @ BTCUSD @ 66150.45 target sl modified for sell order id 140222931 
+02/04/2024 14:44:53 Sell trade executed @ BTCUSD @ 66252.46, next buy=66202.46, next sell=66302.46 
+02/04/2024 14:44:56 Sell trade executed @ BTCUSD @ 66308.78, next buy=66258.78, next sell=66358.78 
+02/04/2024 14:45:09 Sell trade executed @ BTCUSD @ 66363.11, next buy=66313.11, next sell=66413.11 
+02/04/2024 14:46:17 Sell trade executed @ BTCUSD @ 66414.32, next buy=66364.32, next sell=66464.32 
+02/04/2024 14:46:48 Sell trade executed @ BTCUSD @ 66467.62, next buy=66417.62, next sell=66517.62 
+ 140223811 , 1 ordernew Target = 66367.62,new stoploss= 66517.62
+02/04/2024 14:47:17 Couple Buy trade executed @ BTCUSD @ 66417.11 target sl modified for sell order id 140223811 
+ 140223457 , 1 ordernew Target = 66314.32,new stoploss= 66464.32
+02/04/2024 14:47:20 Couple Buy trade executed @ BTCUSD @ 66362.69 target sl modified for sell order id 140223457 
+ 140223811, 0 order new Target = 66567.62,new stoploss= 66367.62
+ 140223811 , 1 ordernew Target = 66367.62,new stoploss= 66567.62
+02/04/2024 14:57:43 Buy trade executed @ BTCUSD @ 66098.62, next buy=66050.0, next sell=66150.0 
+ 140227351, 0 order new Target = 66229.23,new stoploss= 66079.23
+02/04/2024 14:57:59 Couple Sell trade executed @ BTCUSD @ 66151.25 target sl modified for Buy order id 140227351 
+02/04/2024 14:59:42 Sell trade executed @ BTCUSD @ 66179.33, next buy=66100.0, next sell=66200.0 
+02/04/2024 14:59:46 Sell trade executed @ BTCUSD @ 66201.12, next buy=66151.12, next sell=66251.12 
+ 140228230 , 1 ordernew Target = 66101.12,new stoploss= 66251.12
+02/04/2024 15:00:04 Couple Buy trade executed @ BTCUSD @ 66149.03 target sl modified for sell order id 140228230 
+02/04/2024 15:03:39 Buy trade executed @ BTCUSD @ 66094.91, next buy=66050.0, next sell=66150.0 
+02/04/2024 15:04:23 Buy trade executed @ BTCUSD @ 66044.71, next buy=65994.71, next sell=66094.71 
+02/04/2024 15:05:30 Buy trade executed @ BTCUSD @ 65993.05, next buy=65943.05, next sell=66043.05 
+ 140234273, 0 order new Target = 66118.31,new stoploss= 65968.31
+02/04/2024 15:05:45 Couple Sell trade executed @ BTCUSD @ 66045.63 target sl modified for Buy order id 140234273 
+ 140233392, 0 order new Target = 66161.69,new stoploss= 66011.69
+02/04/2024 15:06:04 Couple Sell trade executed @ BTCUSD @ 66096.32 target sl modified for Buy order id 140233392 
+ 140233078, 0 order new Target = 66224.99,new stoploss= 66024.99
+02/04/2024 15:13:04 Sell trade executed @ BTCUSD @ 66150.57, next buy=66100.0, next sell=66200.0 
+ 140238071 , 1 ordernew Target = 66050.57,new stoploss= 66200.57
+02/04/2024 15:13:15 Couple Buy trade executed @ BTCUSD @ 66097.62 target sl modified for sell order id 140238071 
+02/04/2024 15:16:47 Sell trade executed @ BTCUSD @ 66211.82, next buy=66100.0, next sell=66200.0 
+02/04/2024 15:16:47 Sell trade executed @ BTCUSD @ 66211.82, next buy=66161.82, next sell=66261.82 
+02/04/2024 15:17:09 Sell trade executed @ BTCUSD @ 66241.45, next buy=66150.0, next sell=66250.0 
+02/04/2024 15:17:14 Sell trade executed @ BTCUSD @ 66252.93, next buy=66202.93, next sell=66302.93 
+ 140239819 , 1 ordernew Target = 66155.69,new stoploss= 66305.69
+02/04/2024 15:17:30 Couple Buy trade executed @ BTCUSD @ 66202.36 target sl modified for sell order id 140239819 
+ 140239795 , 1 ordernew Target = 66141.45,new stoploss= 66291.45
+02/04/2024 15:20:09 Sell trade executed @ BTCUSD @ 66259.34, next buy=66150.0, next sell=66250.0 
+02/04/2024 15:20:09 Sell trade executed @ BTCUSD @ 66259.34, next buy=66209.34, next sell=66309.34 
+02/04/2024 15:21:57 Sell trade executed @ BTCUSD @ 66260.05, next buy=66200.0, next sell=66300.0 
+ 140242320 , 1 ordernew Target = 66165.68000000001,new stoploss= 66315.68000000001
+02/04/2024 15:22:07 Couple Buy trade executed @ BTCUSD @ 66198.09 target sl modified for sell order id 140242320 
+02/04/2024 15:25:12 Buy trade executed @ BTCUSD @ 66195.09, next buy=66150.0, next sell=66250.0 
