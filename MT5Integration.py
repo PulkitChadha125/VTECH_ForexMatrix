@@ -130,7 +130,7 @@ def mt_buy(symbol,lot,MagicNumber):
         print("result: ", result)
         return order_id
 
-def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp):
+def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
     global mt
     price = mt.symbol_info_tick(symbol).ask
     point = mt.symbol_info(symbol).point
@@ -144,8 +144,8 @@ def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp):
             "volume": lot,
             "type": mt.ORDER_TYPE_BUY,
             "price": price,
-            "sl": price - sl,
-            "tp": price + tp,
+            "sl": reference_price - sl,
+            "tp": reference_price + tp,
             "magic": MagicNumber,
             "comment": "python buy order",
             "type_time": mt.ORDER_TIME_GTC,
@@ -158,7 +158,7 @@ def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp):
     return order_id
 
 
-def mt_sell_bracket(symbol,lot,MagicNumber,sl,tp):
+def mt_sell_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
     global mt
     price = mt.symbol_info_tick(symbol).bid
     print("sl",sl)
@@ -171,8 +171,8 @@ def mt_sell_bracket(symbol,lot,MagicNumber,sl,tp):
             "volume": lot,
             "type": mt.ORDER_TYPE_SELL,
             "price": price,
-            "sl": price + sl,
-            "tp": price - tp,
+            "sl": reference_price + sl,
+            "tp": reference_price - tp,
             "magic": MagicNumber,
             "comment": "python sell order",
             "type_time": mt.ORDER_TIME_GTC,
@@ -251,26 +251,23 @@ def mt_close_sell(symbol,lot,orderid,timestamp):
 
 
 
-def changeslpl(ticket,pair,pos_type,SL,tp,ea_magic_number,volume):
+def changeslpl(ticket,pair,pos_type,SL,tp,ea_magic_number,volume,reference_price):
     global mt
     p_open = mt.positions_get(ticket=ticket)
     price_open = p_open[0].price_open
-    print("price_open: ",price_open)
-    print("sl", SL)
-    print("tp", tp)
-    print("symbol", pair)
-    print("lot", volume)
+    print("reference_price: ",reference_price)
+
     if pos_type=="BUY":
         pos_type=mt.ORDER_TYPE_BUY
-        stoploss=price_open-SL
-        target=price_open+tp
+        stoploss=reference_price-SL
+        target=reference_price+tp
         Oederog = f" { ticket }, {pos_type} order new Target = {target},new stoploss= {stoploss}"
         print(Oederog)
         write_to_order_logs(Oederog)
     if pos_type=="SHORT":
         pos_type = mt.ORDER_TYPE_SELL
-        stoploss=price_open+SL
-        target = price_open - tp
+        stoploss=reference_price+SL
+        target = reference_price - tp
         Oederog = f" { ticket } , {pos_type} ordernew Target = {target},new stoploss= {stoploss}"
         print(Oederog)
         write_to_order_logs(Oederog)

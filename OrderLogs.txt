@@ -60,3 +60,10 @@
  140242320 , 1 ordernew Target = 66165.68000000001,new stoploss= 66315.68000000001
 02/04/2024 15:22:07 Couple Buy trade executed @ BTCUSD @ 66198.09 target sl modified for sell order id 140242320 
 02/04/2024 15:25:12 Buy trade executed @ BTCUSD @ 66195.09, next buy=66150.0, next sell=66250.0 
+02/04/2024 17:51:53 Buy trade executed @ BTCUSD @ 65662.22, next buy=66150.0, next sell=66250.0 
+02/04/2024 17:51:53 Buy trade executed @ BTCUSD @ 65662.22, next buy=65612.22, next sell=65712.22 
+02/04/2024 17:52:30 Buy trade executed @ BTCUSD @ 65657.31, next buy=66500.0, next sell=66700.0 
+02/04/2024 17:52:30 Buy trade executed @ BTCUSD @ 65657.31, next buy=65557.31, next sell=65757.31 
+02/04/2024 17:52:58 Sell trade executed @ BTCUSD @ 65744.52, next buy=65600.0, next sell=65800.0 
+02/04/2024 17:54:08 Buy trade executed @ BTCUSD @ 65698.21, next buy=65600.0, next sell=65800.0 
+02/04/2024 18:01:30 Buy trade executed @ BTCUSD @ 65599.41, next buy=65499.41, next sell=65699.41 

@@ -98,6 +98,7 @@ def main_strategy():
                             'coupleselllevel': None,
                             'tgt':close-params['Target'],
                             'sl':close+params['Stoploss'],
+                            'entry_price':params['SellAbove']
                         }
                 params['Orders'].append(trade_log)
                 print("Chart Candle time :", candletime)
@@ -124,6 +125,7 @@ def main_strategy():
                     'coupleselllevel': params['CurrTradeSellLevel'],
                     'tgt':close+params['Target'],
                     'sl':close-params['Stoploss'],
+                    'entry_price':params['BuyBelow'],
                 }
 
                 params['Orders'].append(trade_log)
@@ -135,8 +137,8 @@ def main_strategy():
 
             if params['InitialTrade'] =="SHORT":
                 if close>= params['CurrTradeSellLevel']:
-                    params['CurrTradeBuyLevel'] = close - params['NextBuyPts']
-                    params['CurrTradeSellLevel'] = close + params['NextSellPts']
+                    params['CurrTradeBuyLevel'] = params['CurrTradeSellLevel'] - params['NextBuyPts']
+                    params['CurrTradeSellLevel'] = params['CurrTradeSellLevel'] + params['NextSellPts']
                     res = trade.mt_short(symbol=symbol, lot=float(params['Lotsize']),
                                          MagicNumber=int(params['MagicNumber']))
 
@@ -146,6 +148,7 @@ def main_strategy():
                         'coupleselllevel': None,
                         'tgt':close-params['Target'],
                             'sl':close+params['Stoploss'],
+                        'entry_price': params['CurrTradeSellLevel']
                     }
 
                     params['Orders'].append(trade_log)
@@ -154,11 +157,15 @@ def main_strategy():
                     write_to_order_logs(Oederog)
                     print("result_dict: ", result_dict)
 
+                if close <= params['CurrTradeBuyLevel']:
+                    params['CurrTradeBuyLevel'] = params['CurrTradeBuyLevel'] - params['NextBuyPts']
+                    params['CurrTradeSellLevel'] = params['CurrTradeBuyLevel'] + params['NextSellPts']
+
 
             if params['InitialTrade'] == "BUY":
                 if close <= params['CurrTradeBuyLevel']:
-                    params['CurrTradeBuyLevel'] = close - params['NextBuyPts']
-                    params['CurrTradeSellLevel'] = close + params['NextSellPts']
+                    params['CurrTradeBuyLevel'] = params['CurrTradeBuyLevel'] - params['NextBuyPts']
+                    params['CurrTradeSellLevel'] = params['CurrTradeBuyLevel'] + params['NextSellPts']
                     res = trade.mt_buy(symbol=symbol, lot=float(params['Lotsize']), MagicNumber=int(params['MagicNumber']))
 
                     trade_log = {
@@ -167,6 +174,7 @@ def main_strategy():
                         'coupleselllevel': params['CurrTradeSellLevel'],
                         'tgt':close+params['Target'],
                             'sl':close-params['Stoploss'],
+                        'entry_price': params['CurrTradeBuyLevel'],
                     }
 
                     params['Orders'].append(trade_log)
@@ -176,10 +184,16 @@ def main_strategy():
                     write_to_order_logs(Oederog)
                     print("result_dict: ", result_dict)
 
+                if close >= params['CurrTradeSellLevel']:
+                    params['CurrTradeBuyLevel'] = params['CurrTradeSellLevel'] - params['NextBuyPts']
+                    params['CurrTradeSellLevel'] = params['CurrTradeSellLevel'] + params['NextSellPts']
+
             for order in params['Orders']:
                 order_id = order['OrderId']
                 couple_buy_level = order['couplebuylevel']
                 couple_sell_level = order['coupleselllevel']
+                entry_price = order['entry_price']
+
 
 
                 if params['InitialTrade'] =="SHORT":
@@ -196,6 +210,7 @@ def main_strategy():
                             tp=float(params["Target"]),
                             ea_magic_number=int(params['MagicNumber']),
                             volume=float(params['Lotsize']),
+                            reference_price=entry_price
                         )
                         print("OrderModify: ",res)
                         print("Chart Candle time :", candletime)
@@ -208,7 +223,8 @@ def main_strategy():
                             lot=float(params['Lotsize']),
                             MagicNumber=int(params['MagicNumber']),
                             sl=float(params["Stoploss"]),
-                            tp=float(params["Target"])
+                            tp=float(params["Target"]),
+                            reference_price=entry_price
                         )
 
 
@@ -223,7 +239,8 @@ def main_strategy():
                             SL=float(params["Stoploss"]),
                             tp=float(params["Target"]),
                             ea_magic_number=int(params['MagicNumber']),
-                            volume=float(params['Lotsize'])
+                            volume=float(params['Lotsize']),
+                            reference_price=entry_price
                         )
                         print("Chart Candle time :", candletime)
                         Oederog = f"{timestamp} Couple Sell trade executed @ {symbol} @ {close} target sl modified for Buy order id {order_id} "
@@ -235,7 +252,8 @@ def main_strategy():
                             lot=float(params['Lotsize']),
                             MagicNumber=int(params['MagicNumber']),
                             sl=float(params["Stoploss"]),
-                            tp=float(params["Target"])
+                            tp=float(params["Target"]),
+                            reference_price=entry_price
                         )
 
 
@@ -249,7 +267,7 @@ def write_to_order_logs(message):
 
 
 
-end_date = datetime(2024, 4, 10)
+end_date = datetime(2024, 4, 13)
 while datetime.now() < end_date:
     main_strategy()
 
