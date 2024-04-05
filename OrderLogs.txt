@@ -67,3 +67,81 @@
 02/04/2024 17:52:58 Sell trade executed @ BTCUSD @ 65744.52, next buy=65600.0, next sell=65800.0 
 02/04/2024 17:54:08 Buy trade executed @ BTCUSD @ 65698.21, next buy=65600.0, next sell=65800.0 
 02/04/2024 18:01:30 Buy trade executed @ BTCUSD @ 65599.41, next buy=65499.41, next sell=65699.41 
+04/04/2024 19:01:15 Sell trade executed @ BTCUSD @ 67353.95, next buy=67250.0, next sell=67350.0 
+04/04/2024 19:01:15 Sell trade executed @ BTCUSD @ 67353.95, next buy=67300.0, next sell=67400.0 
+04/04/2024 19:01:20 Sell trade executed @ BTCUSD @ 67401.26, next buy=67350.0, next sell=67450.0 
+04/04/2024 19:02:17 Buy trade executed @ BTCUSD @ 67244.76, next buy=67300.0, next sell=67400.0 
+04/04/2024 19:02:17 Buy trade executed @ BTCUSD @ 67244.76, next buy=67250.0, next sell=67300.0 
+04/04/2024 19:02:18 Buy trade executed @ BTCUSD @ 67230.34, next buy=67200.0, next sell=67250.0 
+04/04/2024 19:02:21 Buy trade executed @ BTCUSD @ 67195.58, next buy=67150.0, next sell=67200.0 
+ 141695402, 0 order new Target = 67250.0,new stoploss= 67100.0
+04/04/2024 19:02:22 Couple Sell trade executed @ BTCUSD @ 67200.79 target sl modified for Buy order id 141695402 
+04/04/2024 19:03:45 Sell trade executed @ BTCUSD @ 67300.77, next buy=67250.0, next sell=67350.0 
+04/04/2024 19:04:11 Sell trade executed @ BTCUSD @ 67351.47, next buy=67300.0, next sell=67400.0 
+ 141696476 , 1 ordernew Target = 67300.0,new stoploss= 67450.0
+04/04/2024 19:04:16 Couple Buy trade executed @ BTCUSD @ 67298.97 target sl modified for sell order id 141696476 
+04/04/2024 19:04:20 Sell trade executed @ BTCUSD @ 67306.32, next buy=67250.0, next sell=67350.0 
+04/04/2024 19:04:39 Sell trade executed @ BTCUSD @ 67352.36, next buy=67300.0, next sell=67400.0 
+ 141696882 , 1 ordernew Target = 67300.0,new stoploss= 67450.0
+04/04/2024 19:04:54 Couple Buy trade executed @ BTCUSD @ 67298.58 target sl modified for sell order id 141696882 
+04/04/2024 19:05:00 Sell trade executed @ BTCUSD @ 67303.26, next buy=67250.0, next sell=67350.0 
+ 141696151 , 1 ordernew Target = 67200.0,new stoploss= 67350.0
+04/04/2024 19:05:02 Couple Buy trade executed @ BTCUSD @ 67245.72 target sl modified for sell order id 141696151 
+ 141697151 , 1 ordernew Target = 67250.0,new stoploss= 67400.0
+04/04/2024 19:05:02 Couple Buy trade executed @ BTCUSD @ 67245.72 target sl modified for sell order id 141697151 
+04/04/2024 19:05:03 Sell trade executed @ BTCUSD @ 67280.16, next buy=67200.0, next sell=67300.0 
+ 141696574 , 1 ordernew Target = 67250.0,new stoploss= 67400.0
+04/04/2024 19:05:10 Couple Buy trade executed @ BTCUSD @ 67247.37 target sl modified for sell order id 141696574 
+04/04/2024 19:05:24 Sell trade executed @ BTCUSD @ 67304.49, next buy=67250.0, next sell=67350.0 
+04/04/2024 19:05:35 Sell trade executed @ BTCUSD @ 67350.01, next buy=67300.0, next sell=67400.0 
+04/04/2024 19:06:01 Sell trade executed @ BTCUSD @ 67206.43, next buy=67150.0, next sell=67250.0 
+04/04/2024 19:06:04 Sell trade executed @ BTCUSD @ 67250.75, next buy=67200.0, next sell=67300.0 
+04/04/2024 19:09:09 Sell trade executed @ BTCUSD @ 67301.21, next buy=67250.0, next sell=67350.0 
+ 141700248 , 1 ordernew Target = 67200.0,new stoploss= 67350.0
+04/04/2024 19:09:17 Couple Buy trade executed @ BTCUSD @ 67247.27 target sl modified for sell order id 141700248 
+04/04/2024 19:09:18 Sell trade executed @ BTCUSD @ 67252.13, next buy=67200.0, next sell=67300.0 
+04/04/2024 19:10:02 Sell trade executed @ BTCUSD @ 67301.09, next buy=67250.0, next sell=67350.0 
+04/04/2024 19:10:12 Sell trade executed @ BTCUSD @ 67359.52, next buy=67300.0, next sell=67400.0 
+04/04/2024 19:12:32 Sell trade executed @ BTCUSD @ 67300.59, next buy=67250.0, next sell=67350.0 
+04/04/2024 19:12:40 Sell trade executed @ BTCUSD @ 67352.07, next buy=67300.0, next sell=67400.0 
+04/04/2024 19:13:04 Sell trade executed @ BTCUSD @ 67401.13, next buy=67350.0, next sell=67450.0 
+04/04/2024 19:13:07 Sell trade executed @ BTCUSD @ 67451.16, next buy=67400.0, next sell=67500.0 
+ 141702368 , 1 ordernew Target = 67400.0,new stoploss= 67550.0
+04/04/2024 19:13:25 Couple Buy trade executed @ BTCUSD @ 67389.1 target sl modified for sell order id 141702368 
+ 141702352 , 1 ordernew Target = 67350.0,new stoploss= 67500.0
+04/04/2024 19:13:42 Couple Buy trade executed @ BTCUSD @ 67347.29 target sl modified for sell order id 141702352 
+04/04/2024 19:13:43 Sell trade executed @ BTCUSD @ 67352.95, next buy=67300.0, next sell=67400.0 
+04/04/2024 19:14:01 Sell trade executed @ BTCUSD @ 67402.35, next buy=67350.0, next sell=67450.0 
+04/04/2024 19:14:20 Sell trade executed @ BTCUSD @ 67455.65, next buy=67400.0, next sell=67500.0 
+ 141702841 , 1 ordernew Target = 67400.0,new stoploss= 67550.0
+04/04/2024 19:14:26 Couple Buy trade executed @ BTCUSD @ 67398.82 target sl modified for sell order id 141702841 
+04/04/2024 19:14:27 Sell trade executed @ BTCUSD @ 67413.67, next buy=67350.0, next sell=67450.0 
+04/04/2024 19:16:05 Buy trade executed @ BTCUSD @ 67298.91, next buy=67200.0, next sell=67400.0 
+ 141704274, 0 order new Target = 67500.0,new stoploss= 67200.0
+04/04/2024 19:16:54 Couple Sell trade executed @ BTCUSD @ 67401.11 target sl modified for Buy order id 141704274 
+04/04/2024 19:20:09 Sell trade executed @ BTCUSD @ 67454.92, next buy=67300.0, next sell=67500.0 
+04/04/2024 19:21:26 Sell trade executed @ BTCUSD @ 67504.26, next buy=67400.0, next sell=67600.0 
+ 141706690 , 1 ordernew Target = 67300.0,new stoploss= 67600.0
+04/04/2024 19:21:56 Couple Buy trade executed @ BTCUSD @ 67393.5 target sl modified for sell order id 141706690 
+04/04/2024 19:21:58 Sell trade executed @ BTCUSD @ 67402.69, next buy=67300.0, next sell=67500.0 
+ 141706838 , 1 ordernew Target = 67300.0,new stoploss= 67600.0
+04/04/2024 19:22:51 Couple Buy trade executed @ BTCUSD @ 67292.45 target sl modified for sell order id 141706838 
+04/04/2024 19:22:58 Sell trade executed @ BTCUSD @ 67301.99, next buy=67200.0, next sell=67400.0 
+04/04/2024 19:24:19 Sell trade executed @ BTCUSD @ 67401.28, next buy=67300.0, next sell=67500.0 
+04/04/2024 19:25:36 Sell trade executed @ BTCUSD @ 67368.41, next buy=67250.0, next sell=67450.0 
+04/04/2024 19:26:12 Buy trade executed @ BTCUSD @ 67328.23, next buy=67250.0, next sell=67450.0 
+04/04/2024 19:28:31 Buy trade executed @ BTCUSD @ 67248.19, next buy=67150.0, next sell=67250.0 
+ 141710596, 0 order new Target = 67350.0,new stoploss= 67050.0
+04/04/2024 19:28:38 Couple Sell trade executed @ BTCUSD @ 67250.99 target sl modified for Buy order id 141710596 
+05/04/2024 00:07:56 Sell trade executed @ BTCUSD @ 68802.81, next buy=68700.0, next sell=68900.0 
+ 141874660 , 1 ordernew Target = 68600.0,new stoploss= 68900.0
+05/04/2024 00:10:05 Couple Buy trade executed @ BTCUSD @ 68694.73 target sl modified for sell order id 141874660 
+05/04/2024 00:10:05 Sell trade executed @ BTCUSD @ 68715.95, next buy=68600.0, next sell=68800.0 
+05/04/2024 00:10:34 Sell trade executed @ BTCUSD @ 68802.94, next buy=68700.0, next sell=68900.0 
+05/04/2024 00:12:02 Sell trade executed @ BTCUSD @ 68827.41, next buy=68700.0, next sell=68900.0 
+05/04/2024 00:13:09 Sell trade executed @ BTCUSD @ 68901.79, next buy=68800.0, next sell=69000.0 
+05/04/2024 00:13:47 Sell trade executed @ BTCUSD @ 69003.3, next buy=68900.0, next sell=69100.0 
+ 141877250 , 1 ordernew Target = 68900.0,new stoploss= 69200.0
+05/04/2024 00:14:38 Couple Buy trade executed @ BTCUSD @ 68898.07 target sl modified for sell order id 141877250 
+05/04/2024 00:14:40 Sell trade executed @ BTCUSD @ 68902.18, next buy=68800.0, next sell=69000.0 
+05/04/2024 00:15:08 Sell trade executed @ BTCUSD @ 69003.24, next buy=68900.0, next sell=69100.0 

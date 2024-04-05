@@ -96,8 +96,8 @@ def main_strategy():
                             'OrderId': res,
                             'couplebuylevel': params['CurrTradeBuyLevel'],
                             'coupleselllevel': None,
-                            'tgt':close-params['Target'],
-                            'sl':close+params['Stoploss'],
+                            'tgt':params['SellAbove']-params['Target'],
+                            'sl':params['SellAbove']+params['Stoploss'],
                             'entry_price':params['SellAbove']
                         }
                 params['Orders'].append(trade_log)
@@ -123,8 +123,8 @@ def main_strategy():
                     'OrderId': res,
                     'couplebuylevel': None,
                     'coupleselllevel': params['CurrTradeSellLevel'],
-                    'tgt':close+params['Target'],
-                    'sl':close-params['Stoploss'],
+                    'tgt':params['BuyBelow']+params['Target'],
+                    'sl':params['BuyBelow']-params['Stoploss'],
                     'entry_price':params['BuyBelow'],
                 }
 
@@ -146,8 +146,8 @@ def main_strategy():
                         'OrderId': res,
                         'couplebuylevel': params['CurrTradeBuyLevel'],
                         'coupleselllevel': None,
-                        'tgt':close-params['Target'],
-                            'sl':close+params['Stoploss'],
+                        'tgt':params['CurrTradeSellLevel']-params['Target'],
+                            'sl':params['CurrTradeSellLevel']+params['Stoploss'],
                         'entry_price': params['CurrTradeSellLevel']
                     }
 
@@ -172,8 +172,8 @@ def main_strategy():
                         'OrderId': res,
                         'couplebuylevel': None,
                         'coupleselllevel': params['CurrTradeSellLevel'],
-                        'tgt':close+params['Target'],
-                            'sl':close-params['Stoploss'],
+                        'tgt': params['CurrTradeBuyLevel']+params['Target'],
+                            'sl': params['CurrTradeBuyLevel']-params['Stoploss'],
                         'entry_price': params['CurrTradeBuyLevel'],
                     }
 
@@ -192,14 +192,12 @@ def main_strategy():
                 order_id = order['OrderId']
                 couple_buy_level = order['couplebuylevel']
                 couple_sell_level = order['coupleselllevel']
-                entry_price = order['entry_price']
+                entry_price = float(order['entry_price'])
 
 
 
                 if params['InitialTrade'] =="SHORT":
                     if close<=couple_buy_level and couple_buy_level>0:
-                        couple_buy_level=0
-                        order['couplebuylevel']=0
                         print("Stoploss: ",params["Stoploss"])
                         print("Target: ", params["Target"])
                         res=trade.changeslpl(
@@ -210,7 +208,7 @@ def main_strategy():
                             tp=float(params["Target"]),
                             ea_magic_number=int(params['MagicNumber']),
                             volume=float(params['Lotsize']),
-                            reference_price=entry_price
+                            reference_price=float(entry_price)
                         )
                         print("OrderModify: ",res)
                         print("Chart Candle time :", candletime)
@@ -224,14 +222,14 @@ def main_strategy():
                             MagicNumber=int(params['MagicNumber']),
                             sl=float(params["Stoploss"]),
                             tp=float(params["Target"]),
-                            reference_price=entry_price
+                            reference_price=float(couple_buy_level)
                         )
+                        couple_buy_level = 0
+                        order['couplebuylevel'] = 0
 
 
                 if params['InitialTrade'] == "BUY":
                     if close >= couple_sell_level and couple_sell_level>0:
-                        couple_sell_level=0
-                        order['coupleselllevel']=0
                         trade.changeslpl(
                             ticket=order_id,
                             pair=symbol,
@@ -240,7 +238,7 @@ def main_strategy():
                             tp=float(params["Target"]),
                             ea_magic_number=int(params['MagicNumber']),
                             volume=float(params['Lotsize']),
-                            reference_price=entry_price
+                            reference_price=float(entry_price)
                         )
                         print("Chart Candle time :", candletime)
                         Oederog = f"{timestamp} Couple Sell trade executed @ {symbol} @ {close} target sl modified for Buy order id {order_id} "
@@ -253,8 +251,10 @@ def main_strategy():
                             MagicNumber=int(params['MagicNumber']),
                             sl=float(params["Stoploss"]),
                             tp=float(params["Target"]),
-                            reference_price=entry_price
+                            reference_price=float(couple_sell_level)
                         )
+                        couple_sell_level = 0
+                        order['coupleselllevel'] = 0
 
 
     except Exception as e:

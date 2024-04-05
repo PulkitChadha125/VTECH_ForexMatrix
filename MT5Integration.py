@@ -134,10 +134,7 @@ def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
     global mt
     price = mt.symbol_info_tick(symbol).ask
     point = mt.symbol_info(symbol).point
-    print("sl", sl)
-    print("tp", tp)
-    print("symbol", symbol)
-    print("lot", lot)
+    print("reference_price:",reference_price)
     request = {
             "action": mt.TRADE_ACTION_DEAL,
             "symbol": symbol,
@@ -161,10 +158,8 @@ def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
 def mt_sell_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
     global mt
     price = mt.symbol_info_tick(symbol).bid
-    print("sl",sl)
-    print("tp", tp)
-    print("symbol", symbol)
-    print("lot", lot)
+    print("reference_price:",reference_price)
+
     request = {
             "action": mt.TRADE_ACTION_DEAL,
             "symbol": symbol,
