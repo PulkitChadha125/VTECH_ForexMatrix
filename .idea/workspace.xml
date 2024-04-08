@@ -7,6 +7,7 @@
     <list default="true" id="ff9df919-eb37-40fd-a061-63ace2e072ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MT5Integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/MT5Integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineLogs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLogs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainStrategy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderLogs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OrderLogs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TradeSettings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TradeSettings.csv" afterDir="false" />
@@ -61,7 +62,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>

@@ -70,6 +70,9 @@ credentials_dict = get_mt5_credentials()
 Login = credentials_dict.get('Login')
 Password = credentials_dict.get('Password')
 Server = credentials_dict.get('Server')
+
+print("LoginId:",Login)
+print("Server:",Server)
 trade.login(Login, Password, Server)
 
 
@@ -101,11 +104,11 @@ def main_strategy():
                             'entry_price':params['SellAbove']
                         }
                 params['Orders'].append(trade_log)
-                print("Chart Candle time :", candletime)
-                Oederog = f"{timestamp} Sell trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                # print("Chart Candle time :", candletime)
+                Oederog = f"{timestamp} Sell trade executed primary @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
                 print(Oederog)
                 write_to_order_logs(Oederog)
-                print("result_dict: ",result_dict)
+                # print("result_dict: ",result_dict)
 
 
 
@@ -129,14 +132,15 @@ def main_strategy():
                 }
 
                 params['Orders'].append(trade_log)
-                print("Chart Candle time :", candletime)
-                Oederog = f"{timestamp} Buy trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                # print("Chart Candle time :", candletime)
+                Oederog = f"{timestamp} Buy trade executed primary @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
                 print(Oederog)
                 write_to_order_logs(Oederog)
-                print("result_dict: ", result_dict)
+                # print("result_dict: ", result_dict)
 
             if params['InitialTrade'] =="SHORT":
                 if close>= params['CurrTradeSellLevel']:
+                    ep=params['CurrTradeSellLevel']
                     params['CurrTradeBuyLevel'] = params['CurrTradeSellLevel'] - params['NextBuyPts']
                     params['CurrTradeSellLevel'] = params['CurrTradeSellLevel'] + params['NextSellPts']
                     res = trade.mt_short(symbol=symbol, lot=float(params['Lotsize']),
@@ -148,24 +152,29 @@ def main_strategy():
                         'coupleselllevel': None,
                         'tgt':params['CurrTradeSellLevel']-params['Target'],
                             'sl':params['CurrTradeSellLevel']+params['Stoploss'],
-                        'entry_price': params['CurrTradeSellLevel']
+                        'entry_price':ep
                     }
 
                     params['Orders'].append(trade_log)
-                    Oederog = f"{timestamp} Sell trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                    Oederog = f"{timestamp} Sell trade executed secondary @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
                     print(Oederog)
                     write_to_order_logs(Oederog)
-                    print("result_dict: ", result_dict)
+                    # print("result_dict: ", result_dict)
 
                 if close <= params['CurrTradeBuyLevel']:
-                    params['CurrTradeBuyLevel'] = params['CurrTradeBuyLevel'] - params['NextBuyPts']
                     params['CurrTradeSellLevel'] = params['CurrTradeBuyLevel'] + params['NextSellPts']
+                    params['CurrTradeBuyLevel'] = params['CurrTradeBuyLevel'] - params['NextBuyPts']
+                    Oederog = f"{timestamp} sell secondy loop level updated : CurrTradeBuyLevel: {params['CurrTradeBuyLevel']}, CurrTradeSellLevel:{params['CurrTradeSellLevel']} "
+                    print(Oederog)
+                    write_to_order_logs(Oederog)
+                    # print("result_dict: ", result_dict)
 
 
             if params['InitialTrade'] == "BUY":
                 if close <= params['CurrTradeBuyLevel']:
-                    params['CurrTradeBuyLevel'] = params['CurrTradeBuyLevel'] - params['NextBuyPts']
+                    ep=params['CurrTradeBuyLevel']
                     params['CurrTradeSellLevel'] = params['CurrTradeBuyLevel'] + params['NextSellPts']
+                    params['CurrTradeBuyLevel'] = params['CurrTradeBuyLevel'] - params['NextBuyPts']
                     res = trade.mt_buy(symbol=symbol, lot=float(params['Lotsize']), MagicNumber=int(params['MagicNumber']))
 
                     trade_log = {
@@ -174,12 +183,13 @@ def main_strategy():
                         'coupleselllevel': params['CurrTradeSellLevel'],
                         'tgt': params['CurrTradeBuyLevel']+params['Target'],
                             'sl': params['CurrTradeBuyLevel']-params['Stoploss'],
-                        'entry_price': params['CurrTradeBuyLevel'],
+                        'entry_price': ep,
                     }
 
                     params['Orders'].append(trade_log)
-                    print("Chart Candle time :", candletime)
-                    Oederog = f"{timestamp} Buy trade executed @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
+                    # print("Chart Candle time :", candletime)
+
+                    Oederog = f"{timestamp} Buy trade executed secondary @ {symbol} @ {close}, next buy={params['CurrTradeBuyLevel']}, next sell={params['CurrTradeSellLevel']} "
                     print(Oederog)
                     write_to_order_logs(Oederog)
                     print("result_dict: ", result_dict)
@@ -187,6 +197,10 @@ def main_strategy():
                 if close >= params['CurrTradeSellLevel']:
                     params['CurrTradeBuyLevel'] = params['CurrTradeSellLevel'] - params['NextBuyPts']
                     params['CurrTradeSellLevel'] = params['CurrTradeSellLevel'] + params['NextSellPts']
+
+                    Oederog = f"{timestamp} buy secondy loop level updated : CurrTradeBuyLevel: {params['CurrTradeBuyLevel']}, CurrTradeSellLevel:{params['CurrTradeSellLevel']} "
+                    print(Oederog)
+                    write_to_order_logs(Oederog)
 
             for order in params['Orders']:
                 order_id = order['OrderId']
@@ -198,8 +212,6 @@ def main_strategy():
 
                 if params['InitialTrade'] =="SHORT":
                     if close<=couple_buy_level and couple_buy_level>0:
-                        print("Stoploss: ",params["Stoploss"])
-                        print("Target: ", params["Target"])
                         res=trade.changeslpl(
                             ticket=order_id,
                             pair=symbol,
@@ -211,7 +223,6 @@ def main_strategy():
                             reference_price=float(entry_price)
                         )
                         print("OrderModify: ",res)
-                        print("Chart Candle time :", candletime)
                         Oederog = f"{timestamp} Couple Buy trade executed @ {symbol} @ {close} target sl modified for sell order id {order_id} "
                         print(Oederog)
                         write_to_order_logs(Oederog)
@@ -240,7 +251,6 @@ def main_strategy():
                             volume=float(params['Lotsize']),
                             reference_price=float(entry_price)
                         )
-                        print("Chart Candle time :", candletime)
                         Oederog = f"{timestamp} Couple Sell trade executed @ {symbol} @ {close} target sl modified for Buy order id {order_id} "
                         print(Oederog)
                         write_to_order_logs(Oederog)
@@ -268,7 +278,7 @@ def write_to_order_logs(message):
 
 
 end_date = datetime(2024, 4, 13)
-while datetime.now() < end_date:
+while True:
     main_strategy()
 
 

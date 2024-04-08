@@ -1,147 +1,128 @@
-31/03/2024 00:07:09 Sell trade executed @ BTCUSD @ 70002.27, next buy=68890.0, next sell=68990.0 
-31/03/2024 00:07:09 Sell trade executed @ BTCUSD @ 70002.27, next buy=69952.27, next sell=70052.27 
-31/03/2024 00:08:12 Sell trade executed @ BTCUSD @ 70002.95, next buy=69950.0, next sell=70050.0 
-02/04/2024 13:07:29 Buy trade executed @ BTCUSD @ 66588.44, next buy=66500.0, next sell=66700.0 
-02/04/2024 13:08:49 Buy trade executed @ BTCUSD @ 66492.09, next buy=66392.09, next sell=66592.09 
- 140179981, 0 order new Target = 66747.64,new stoploss= 66447.64
-02/04/2024 13:09:17 Couple Sell trade executed @ BTCUSD @ 66593.64 target sl modified for Buy order id 140179981 
-02/04/2024 13:14:26 Sell trade executed @ BTCUSD @ 66600.6, next buy=66500.0, next sell=66700.0 
- 140181396 , 1 ordernew Target = 66400.6,new stoploss= 66700.6
-02/04/2024 13:16:10 Couple Buy trade executed @ BTCUSD @ 66498.76 target sl modified for sell order id 140181396 
-02/04/2024 13:22:44 Buy trade executed @ BTCUSD @ 66495.75, next buy=66400.0, next sell=66600.0 
- 140185491, 0 order new Target = 66728.15,new stoploss= 66428.15
-02/04/2024 13:23:43 Couple Sell trade executed @ BTCUSD @ 66603.47 target sl modified for Buy order id 140185491 
-02/04/2024 13:26:53 Buy trade executed @ BTCUSD @ 66499.29, next buy=66400.0, next sell=66600.0 
- 140186618, 0 order new Target = 66724.56,new stoploss= 66424.56
-02/04/2024 13:32:03 Couple Sell trade executed @ BTCUSD @ 66600.97 target sl modified for Buy order id 140186618 
-02/04/2024 14:44:38 Sell trade executed @ BTCUSD @ 66198.28, next buy=66100.0, next sell=66200.0 
-02/04/2024 14:44:39 Sell trade executed @ BTCUSD @ 66202.15, next buy=66152.15, next sell=66252.15 
- 140222931 , 1 ordernew Target = 66107.99,new stoploss= 66257.99
-02/04/2024 14:44:43 Couple Buy trade executed @ BTCUSD @ 66150.45 target sl modified for sell order id 140222931 
-02/04/2024 14:44:53 Sell trade executed @ BTCUSD @ 66252.46, next buy=66202.46, next sell=66302.46 
-02/04/2024 14:44:56 Sell trade executed @ BTCUSD @ 66308.78, next buy=66258.78, next sell=66358.78 
-02/04/2024 14:45:09 Sell trade executed @ BTCUSD @ 66363.11, next buy=66313.11, next sell=66413.11 
-02/04/2024 14:46:17 Sell trade executed @ BTCUSD @ 66414.32, next buy=66364.32, next sell=66464.32 
-02/04/2024 14:46:48 Sell trade executed @ BTCUSD @ 66467.62, next buy=66417.62, next sell=66517.62 
- 140223811 , 1 ordernew Target = 66367.62,new stoploss= 66517.62
-02/04/2024 14:47:17 Couple Buy trade executed @ BTCUSD @ 66417.11 target sl modified for sell order id 140223811 
- 140223457 , 1 ordernew Target = 66314.32,new stoploss= 66464.32
-02/04/2024 14:47:20 Couple Buy trade executed @ BTCUSD @ 66362.69 target sl modified for sell order id 140223457 
- 140223811, 0 order new Target = 66567.62,new stoploss= 66367.62
- 140223811 , 1 ordernew Target = 66367.62,new stoploss= 66567.62
-02/04/2024 14:57:43 Buy trade executed @ BTCUSD @ 66098.62, next buy=66050.0, next sell=66150.0 
- 140227351, 0 order new Target = 66229.23,new stoploss= 66079.23
-02/04/2024 14:57:59 Couple Sell trade executed @ BTCUSD @ 66151.25 target sl modified for Buy order id 140227351 
-02/04/2024 14:59:42 Sell trade executed @ BTCUSD @ 66179.33, next buy=66100.0, next sell=66200.0 
-02/04/2024 14:59:46 Sell trade executed @ BTCUSD @ 66201.12, next buy=66151.12, next sell=66251.12 
- 140228230 , 1 ordernew Target = 66101.12,new stoploss= 66251.12
-02/04/2024 15:00:04 Couple Buy trade executed @ BTCUSD @ 66149.03 target sl modified for sell order id 140228230 
-02/04/2024 15:03:39 Buy trade executed @ BTCUSD @ 66094.91, next buy=66050.0, next sell=66150.0 
-02/04/2024 15:04:23 Buy trade executed @ BTCUSD @ 66044.71, next buy=65994.71, next sell=66094.71 
-02/04/2024 15:05:30 Buy trade executed @ BTCUSD @ 65993.05, next buy=65943.05, next sell=66043.05 
- 140234273, 0 order new Target = 66118.31,new stoploss= 65968.31
-02/04/2024 15:05:45 Couple Sell trade executed @ BTCUSD @ 66045.63 target sl modified for Buy order id 140234273 
- 140233392, 0 order new Target = 66161.69,new stoploss= 66011.69
-02/04/2024 15:06:04 Couple Sell trade executed @ BTCUSD @ 66096.32 target sl modified for Buy order id 140233392 
- 140233078, 0 order new Target = 66224.99,new stoploss= 66024.99
-02/04/2024 15:13:04 Sell trade executed @ BTCUSD @ 66150.57, next buy=66100.0, next sell=66200.0 
- 140238071 , 1 ordernew Target = 66050.57,new stoploss= 66200.57
-02/04/2024 15:13:15 Couple Buy trade executed @ BTCUSD @ 66097.62 target sl modified for sell order id 140238071 
-02/04/2024 15:16:47 Sell trade executed @ BTCUSD @ 66211.82, next buy=66100.0, next sell=66200.0 
-02/04/2024 15:16:47 Sell trade executed @ BTCUSD @ 66211.82, next buy=66161.82, next sell=66261.82 
-02/04/2024 15:17:09 Sell trade executed @ BTCUSD @ 66241.45, next buy=66150.0, next sell=66250.0 
-02/04/2024 15:17:14 Sell trade executed @ BTCUSD @ 66252.93, next buy=66202.93, next sell=66302.93 
- 140239819 , 1 ordernew Target = 66155.69,new stoploss= 66305.69
-02/04/2024 15:17:30 Couple Buy trade executed @ BTCUSD @ 66202.36 target sl modified for sell order id 140239819 
- 140239795 , 1 ordernew Target = 66141.45,new stoploss= 66291.45
-02/04/2024 15:20:09 Sell trade executed @ BTCUSD @ 66259.34, next buy=66150.0, next sell=66250.0 
-02/04/2024 15:20:09 Sell trade executed @ BTCUSD @ 66259.34, next buy=66209.34, next sell=66309.34 
-02/04/2024 15:21:57 Sell trade executed @ BTCUSD @ 66260.05, next buy=66200.0, next sell=66300.0 
- 140242320 , 1 ordernew Target = 66165.68000000001,new stoploss= 66315.68000000001
-02/04/2024 15:22:07 Couple Buy trade executed @ BTCUSD @ 66198.09 target sl modified for sell order id 140242320 
-02/04/2024 15:25:12 Buy trade executed @ BTCUSD @ 66195.09, next buy=66150.0, next sell=66250.0 
-02/04/2024 17:51:53 Buy trade executed @ BTCUSD @ 65662.22, next buy=66150.0, next sell=66250.0 
-02/04/2024 17:51:53 Buy trade executed @ BTCUSD @ 65662.22, next buy=65612.22, next sell=65712.22 
-02/04/2024 17:52:30 Buy trade executed @ BTCUSD @ 65657.31, next buy=66500.0, next sell=66700.0 
-02/04/2024 17:52:30 Buy trade executed @ BTCUSD @ 65657.31, next buy=65557.31, next sell=65757.31 
-02/04/2024 17:52:58 Sell trade executed @ BTCUSD @ 65744.52, next buy=65600.0, next sell=65800.0 
-02/04/2024 17:54:08 Buy trade executed @ BTCUSD @ 65698.21, next buy=65600.0, next sell=65800.0 
-02/04/2024 18:01:30 Buy trade executed @ BTCUSD @ 65599.41, next buy=65499.41, next sell=65699.41 
-04/04/2024 19:01:15 Sell trade executed @ BTCUSD @ 67353.95, next buy=67250.0, next sell=67350.0 
-04/04/2024 19:01:15 Sell trade executed @ BTCUSD @ 67353.95, next buy=67300.0, next sell=67400.0 
-04/04/2024 19:01:20 Sell trade executed @ BTCUSD @ 67401.26, next buy=67350.0, next sell=67450.0 
-04/04/2024 19:02:17 Buy trade executed @ BTCUSD @ 67244.76, next buy=67300.0, next sell=67400.0 
-04/04/2024 19:02:17 Buy trade executed @ BTCUSD @ 67244.76, next buy=67250.0, next sell=67300.0 
-04/04/2024 19:02:18 Buy trade executed @ BTCUSD @ 67230.34, next buy=67200.0, next sell=67250.0 
-04/04/2024 19:02:21 Buy trade executed @ BTCUSD @ 67195.58, next buy=67150.0, next sell=67200.0 
- 141695402, 0 order new Target = 67250.0,new stoploss= 67100.0
-04/04/2024 19:02:22 Couple Sell trade executed @ BTCUSD @ 67200.79 target sl modified for Buy order id 141695402 
-04/04/2024 19:03:45 Sell trade executed @ BTCUSD @ 67300.77, next buy=67250.0, next sell=67350.0 
-04/04/2024 19:04:11 Sell trade executed @ BTCUSD @ 67351.47, next buy=67300.0, next sell=67400.0 
- 141696476 , 1 ordernew Target = 67300.0,new stoploss= 67450.0
-04/04/2024 19:04:16 Couple Buy trade executed @ BTCUSD @ 67298.97 target sl modified for sell order id 141696476 
-04/04/2024 19:04:20 Sell trade executed @ BTCUSD @ 67306.32, next buy=67250.0, next sell=67350.0 
-04/04/2024 19:04:39 Sell trade executed @ BTCUSD @ 67352.36, next buy=67300.0, next sell=67400.0 
- 141696882 , 1 ordernew Target = 67300.0,new stoploss= 67450.0
-04/04/2024 19:04:54 Couple Buy trade executed @ BTCUSD @ 67298.58 target sl modified for sell order id 141696882 
-04/04/2024 19:05:00 Sell trade executed @ BTCUSD @ 67303.26, next buy=67250.0, next sell=67350.0 
- 141696151 , 1 ordernew Target = 67200.0,new stoploss= 67350.0
-04/04/2024 19:05:02 Couple Buy trade executed @ BTCUSD @ 67245.72 target sl modified for sell order id 141696151 
- 141697151 , 1 ordernew Target = 67250.0,new stoploss= 67400.0
-04/04/2024 19:05:02 Couple Buy trade executed @ BTCUSD @ 67245.72 target sl modified for sell order id 141697151 
-04/04/2024 19:05:03 Sell trade executed @ BTCUSD @ 67280.16, next buy=67200.0, next sell=67300.0 
- 141696574 , 1 ordernew Target = 67250.0,new stoploss= 67400.0
-04/04/2024 19:05:10 Couple Buy trade executed @ BTCUSD @ 67247.37 target sl modified for sell order id 141696574 
-04/04/2024 19:05:24 Sell trade executed @ BTCUSD @ 67304.49, next buy=67250.0, next sell=67350.0 
-04/04/2024 19:05:35 Sell trade executed @ BTCUSD @ 67350.01, next buy=67300.0, next sell=67400.0 
-04/04/2024 19:06:01 Sell trade executed @ BTCUSD @ 67206.43, next buy=67150.0, next sell=67250.0 
-04/04/2024 19:06:04 Sell trade executed @ BTCUSD @ 67250.75, next buy=67200.0, next sell=67300.0 
-04/04/2024 19:09:09 Sell trade executed @ BTCUSD @ 67301.21, next buy=67250.0, next sell=67350.0 
- 141700248 , 1 ordernew Target = 67200.0,new stoploss= 67350.0
-04/04/2024 19:09:17 Couple Buy trade executed @ BTCUSD @ 67247.27 target sl modified for sell order id 141700248 
-04/04/2024 19:09:18 Sell trade executed @ BTCUSD @ 67252.13, next buy=67200.0, next sell=67300.0 
-04/04/2024 19:10:02 Sell trade executed @ BTCUSD @ 67301.09, next buy=67250.0, next sell=67350.0 
-04/04/2024 19:10:12 Sell trade executed @ BTCUSD @ 67359.52, next buy=67300.0, next sell=67400.0 
-04/04/2024 19:12:32 Sell trade executed @ BTCUSD @ 67300.59, next buy=67250.0, next sell=67350.0 
-04/04/2024 19:12:40 Sell trade executed @ BTCUSD @ 67352.07, next buy=67300.0, next sell=67400.0 
-04/04/2024 19:13:04 Sell trade executed @ BTCUSD @ 67401.13, next buy=67350.0, next sell=67450.0 
-04/04/2024 19:13:07 Sell trade executed @ BTCUSD @ 67451.16, next buy=67400.0, next sell=67500.0 
- 141702368 , 1 ordernew Target = 67400.0,new stoploss= 67550.0
-04/04/2024 19:13:25 Couple Buy trade executed @ BTCUSD @ 67389.1 target sl modified for sell order id 141702368 
- 141702352 , 1 ordernew Target = 67350.0,new stoploss= 67500.0
-04/04/2024 19:13:42 Couple Buy trade executed @ BTCUSD @ 67347.29 target sl modified for sell order id 141702352 
-04/04/2024 19:13:43 Sell trade executed @ BTCUSD @ 67352.95, next buy=67300.0, next sell=67400.0 
-04/04/2024 19:14:01 Sell trade executed @ BTCUSD @ 67402.35, next buy=67350.0, next sell=67450.0 
-04/04/2024 19:14:20 Sell trade executed @ BTCUSD @ 67455.65, next buy=67400.0, next sell=67500.0 
- 141702841 , 1 ordernew Target = 67400.0,new stoploss= 67550.0
-04/04/2024 19:14:26 Couple Buy trade executed @ BTCUSD @ 67398.82 target sl modified for sell order id 141702841 
-04/04/2024 19:14:27 Sell trade executed @ BTCUSD @ 67413.67, next buy=67350.0, next sell=67450.0 
-04/04/2024 19:16:05 Buy trade executed @ BTCUSD @ 67298.91, next buy=67200.0, next sell=67400.0 
- 141704274, 0 order new Target = 67500.0,new stoploss= 67200.0
-04/04/2024 19:16:54 Couple Sell trade executed @ BTCUSD @ 67401.11 target sl modified for Buy order id 141704274 
-04/04/2024 19:20:09 Sell trade executed @ BTCUSD @ 67454.92, next buy=67300.0, next sell=67500.0 
-04/04/2024 19:21:26 Sell trade executed @ BTCUSD @ 67504.26, next buy=67400.0, next sell=67600.0 
- 141706690 , 1 ordernew Target = 67300.0,new stoploss= 67600.0
-04/04/2024 19:21:56 Couple Buy trade executed @ BTCUSD @ 67393.5 target sl modified for sell order id 141706690 
-04/04/2024 19:21:58 Sell trade executed @ BTCUSD @ 67402.69, next buy=67300.0, next sell=67500.0 
- 141706838 , 1 ordernew Target = 67300.0,new stoploss= 67600.0
-04/04/2024 19:22:51 Couple Buy trade executed @ BTCUSD @ 67292.45 target sl modified for sell order id 141706838 
-04/04/2024 19:22:58 Sell trade executed @ BTCUSD @ 67301.99, next buy=67200.0, next sell=67400.0 
-04/04/2024 19:24:19 Sell trade executed @ BTCUSD @ 67401.28, next buy=67300.0, next sell=67500.0 
-04/04/2024 19:25:36 Sell trade executed @ BTCUSD @ 67368.41, next buy=67250.0, next sell=67450.0 
-04/04/2024 19:26:12 Buy trade executed @ BTCUSD @ 67328.23, next buy=67250.0, next sell=67450.0 
-04/04/2024 19:28:31 Buy trade executed @ BTCUSD @ 67248.19, next buy=67150.0, next sell=67250.0 
- 141710596, 0 order new Target = 67350.0,new stoploss= 67050.0
-04/04/2024 19:28:38 Couple Sell trade executed @ BTCUSD @ 67250.99 target sl modified for Buy order id 141710596 
-05/04/2024 00:07:56 Sell trade executed @ BTCUSD @ 68802.81, next buy=68700.0, next sell=68900.0 
- 141874660 , 1 ordernew Target = 68600.0,new stoploss= 68900.0
-05/04/2024 00:10:05 Couple Buy trade executed @ BTCUSD @ 68694.73 target sl modified for sell order id 141874660 
-05/04/2024 00:10:05 Sell trade executed @ BTCUSD @ 68715.95, next buy=68600.0, next sell=68800.0 
-05/04/2024 00:10:34 Sell trade executed @ BTCUSD @ 68802.94, next buy=68700.0, next sell=68900.0 
-05/04/2024 00:12:02 Sell trade executed @ BTCUSD @ 68827.41, next buy=68700.0, next sell=68900.0 
-05/04/2024 00:13:09 Sell trade executed @ BTCUSD @ 68901.79, next buy=68800.0, next sell=69000.0 
-05/04/2024 00:13:47 Sell trade executed @ BTCUSD @ 69003.3, next buy=68900.0, next sell=69100.0 
- 141877250 , 1 ordernew Target = 68900.0,new stoploss= 69200.0
-05/04/2024 00:14:38 Couple Buy trade executed @ BTCUSD @ 68898.07 target sl modified for sell order id 141877250 
-05/04/2024 00:14:40 Sell trade executed @ BTCUSD @ 68902.18, next buy=68800.0, next sell=69000.0 
-05/04/2024 00:15:08 Sell trade executed @ BTCUSD @ 69003.24, next buy=68900.0, next sell=69100.0 
+05/04/2024 14:51:21 Sell trade executed primary @ XAUUSD @ 2289.017, next buy=2288.0, next sell=2290.0 
+05/04/2024 14:53:35 sell secondy loop level updated : CurrTradeBuyLevel: 2287.0, CurrTradeSellLevel:2288.0 
+ 142183383 , 1 ordernew Target = 2287.0,new stoploss= 2290.0
+05/04/2024 14:53:35 Couple Buy trade executed @ XAUUSD @ 2287.995 target sl modified for sell order id 142183383 
+05/04/2024 14:53:40 Sell trade executed secondary @ XAUUSD @ 2288.012, next buy=2287.0, next sell=2289.0 
+05/04/2024 14:54:45 Sell trade executed secondary @ XAUUSD @ 2289.002, next buy=2288.0, next sell=2290.0 
+05/04/2024 19:37:03 Buy trade executed primary @ XAUUSD @ 2296.979, next buy=2296.0, next sell=2298.0 
+05/04/2024 19:38:39 Buy trade executed secondary @ XAUUSD @ 2295.989, next buy=2295.0, next sell=2296.0 
+05/04/2024 19:38:40 buy secondy loop level updated : CurrTradeBuyLevel: 2295.0, CurrTradeSellLevel:2297.0 
+ 142383997, 0 order new Target = 2297.0,new stoploss= 2294.0
+05/04/2024 19:38:40 Couple Sell trade executed @ XAUUSD @ 2296.162 target sl modified for Buy order id 142383997 
+05/04/2024 19:39:05 buy secondy loop level updated : CurrTradeBuyLevel: 2296.0, CurrTradeSellLevel:2298.0 
+05/04/2024 19:39:56 buy secondy loop level updated : CurrTradeBuyLevel: 2297.0, CurrTradeSellLevel:2299.0 
+ 142382342, 0 order new Target = 2299.0,new stoploss= 2296.0
+05/04/2024 19:39:56 Couple Sell trade executed @ XAUUSD @ 2298.017 target sl modified for Buy order id 142382342 
+05/04/2024 19:40:09 buy secondy loop level updated : CurrTradeBuyLevel: 2298.0, CurrTradeSellLevel:2300.0 
+05/04/2024 19:40:17 buy secondy loop level updated : CurrTradeBuyLevel: 2299.0, CurrTradeSellLevel:2301.0 
+05/04/2024 19:40:30 buy secondy loop level updated : CurrTradeBuyLevel: 2300.0, CurrTradeSellLevel:2302.0 
+05/04/2024 19:40:40 buy secondy loop level updated : CurrTradeBuyLevel: 2301.0, CurrTradeSellLevel:2303.0 
+05/04/2024 19:41:14 Buy trade executed secondary @ XAUUSD @ 2300.987, next buy=2300.0, next sell=2301.0 
+05/04/2024 19:41:15 buy secondy loop level updated : CurrTradeBuyLevel: 2300.0, CurrTradeSellLevel:2302.0 
+ 142387129, 0 order new Target = 2302.0,new stoploss= 2299.0
+05/04/2024 19:41:15 Couple Sell trade executed @ XAUUSD @ 2301.002 target sl modified for Buy order id 142387129 
+05/04/2024 19:42:00 buy secondy loop level updated : CurrTradeBuyLevel: 2301.0, CurrTradeSellLevel:2303.0 
+05/04/2024 19:42:25 buy secondy loop level updated : CurrTradeBuyLevel: 2302.0, CurrTradeSellLevel:2304.0 
+05/04/2024 19:51:20 Buy trade executed primary @ XAUUSD @ 2302.638, next buy=2302.0, next sell=2304.0 
+05/04/2024 19:51:31 Buy trade executed secondary @ XAUUSD @ 2301.989, next buy=2301.0, next sell=2303.0 
+05/04/2024 19:52:13 Sell trade executed primary @ XAUUSD @ 2302.007, next buy=2301.0, next sell=2303.0 
+05/04/2024 19:52:49 Sell trade executed secondary @ XAUUSD @ 2303.031, next buy=2302.0, next sell=2304.0 
+05/04/2024 19:53:58 Sell trade executed secondary @ XAUUSD @ 2304.056, next buy=2303.0, next sell=2305.0 
+05/04/2024 19:54:24 Sell trade executed secondary @ XAUUSD @ 2305.003, next buy=2304.0, next sell=2306.0 
+05/04/2024 19:54:25 Sell trade executed secondary @ XAUUSD @ 2306.029, next buy=2305.0, next sell=2307.0 
+05/04/2024 19:54:26 Sell trade executed secondary @ XAUUSD @ 2307.01, next buy=2306.0, next sell=2308.0 
+05/04/2024 19:54:28 Sell trade executed secondary @ XAUUSD @ 2308.019, next buy=2307.0, next sell=2309.0 
+05/04/2024 19:54:29 sell secondy loop level updated : CurrTradeBuyLevel: 2306.0, CurrTradeSellLevel:2308.0 
+ 142400597 , 1 ordernew Target = 2307.0,new stoploss= 2310.0
+05/04/2024 19:54:29 Couple Buy trade executed @ XAUUSD @ 2306.968 target sl modified for sell order id 142400597 
+05/04/2024 19:54:40 sell secondy loop level updated : CurrTradeBuyLevel: 2305.0, CurrTradeSellLevel:2307.0 
+ 142399973 , 1 ordernew Target = 2306.0,new stoploss= 2309.0
+05/04/2024 19:54:40 Couple Buy trade executed @ XAUUSD @ 2305.946 target sl modified for sell order id 142399973 
+05/04/2024 19:55:52 Sell trade executed secondary @ XAUUSD @ 2307.007, next buy=2306.0, next sell=2308.0 
+05/04/2024 19:56:03 Sell trade executed secondary @ XAUUSD @ 2308.176, next buy=2307.0, next sell=2309.0 
+05/04/2024 19:56:20 Sell trade executed secondary @ XAUUSD @ 2309.145, next buy=2308.0, next sell=2310.0 
+05/04/2024 20:02:27 Sell trade executed primary @ XAUUSD @ 2314.035, next buy=2313.0, next sell=2315.0 
+05/04/2024 20:02:42 Sell trade executed secondary @ XAUUSD @ 2315.268, next buy=2314.0, next sell=2316.0 
+05/04/2024 20:03:02 Sell trade executed secondary @ XAUUSD @ 2316.001, next buy=2315.0, next sell=2317.0 
+05/04/2024 20:03:12 Sell trade executed secondary @ XAUUSD @ 2317.002, next buy=2316.0, next sell=2318.0 
+05/04/2024 20:03:19 Sell trade executed secondary @ XAUUSD @ 2318.165, next buy=2317.0, next sell=2319.0 
+05/04/2024 20:03:35 Sell trade executed secondary @ XAUUSD @ 2319.019, next buy=2318.0, next sell=2320.0 
+05/04/2024 20:03:37 sell secondy loop level updated : CurrTradeBuyLevel: 2317.0, CurrTradeSellLevel:2319.0 
+ 142426359 , 1 ordernew Target = 2318.0,new stoploss= 2321.0
+05/04/2024 20:03:37 Couple Buy trade executed @ XAUUSD @ 2317.987 target sl modified for sell order id 142426359 
+05/04/2024 20:03:38 Sell trade executed secondary @ XAUUSD @ 2319.0, next buy=2318.0, next sell=2320.0 
+05/04/2024 20:03:54 Sell trade executed secondary @ XAUUSD @ 2320.037, next buy=2319.0, next sell=2321.0 
+05/04/2024 20:03:58 Sell trade executed secondary @ XAUUSD @ 2321.04, next buy=2320.0, next sell=2322.0 
+05/04/2024 20:04:04 sell secondy loop level updated : CurrTradeBuyLevel: 2319.0, CurrTradeSellLevel:2321.0 
+ 142428207 , 1 ordernew Target = 2320.0,new stoploss= 2323.0
+05/04/2024 20:04:04 Couple Buy trade executed @ XAUUSD @ 2319.94 target sl modified for sell order id 142428207 
+05/04/2024 20:04:09 sell secondy loop level updated : CurrTradeBuyLevel: 2318.0, CurrTradeSellLevel:2320.0 
+ 142427391 , 1 ordernew Target = 2319.0,new stoploss= 2322.0
+05/04/2024 20:04:09 Couple Buy trade executed @ XAUUSD @ 2318.979 target sl modified for sell order id 142427391 
+05/04/2024 20:04:13 Sell trade executed secondary @ XAUUSD @ 2320.109, next buy=2319.0, next sell=2321.0 
+05/04/2024 20:04:16 Sell trade executed secondary @ XAUUSD @ 2321.043, next buy=2320.0, next sell=2322.0 
+05/04/2024 20:04:24 sell secondy loop level updated : CurrTradeBuyLevel: 2319.0, CurrTradeSellLevel:2321.0 
+ 142428863 , 1 ordernew Target = 2320.0,new stoploss= 2323.0
+05/04/2024 20:04:24 Couple Buy trade executed @ XAUUSD @ 2319.983 target sl modified for sell order id 142428863 
+05/04/2024 20:04:40 sell secondy loop level updated : CurrTradeBuyLevel: 2318.0, CurrTradeSellLevel:2320.0 
+ 142428817 , 1 ordernew Target = 2319.0,new stoploss= 2322.0
+05/04/2024 20:04:40 Couple Buy trade executed @ XAUUSD @ 2318.985 target sl modified for sell order id 142428817 
+05/04/2024 20:04:50 sell secondy loop level updated : CurrTradeBuyLevel: 2317.0, CurrTradeSellLevel:2319.0 
+ 142426523 , 1 ordernew Target = 2318.0,new stoploss= 2321.0
+05/04/2024 20:04:50 Couple Buy trade executed @ XAUUSD @ 2317.976 target sl modified for sell order id 142426523 
+05/04/2024 20:05:41 Sell trade executed secondary @ XAUUSD @ 2319.059, next buy=2318.0, next sell=2320.0 
+05/04/2024 20:05:55 sell secondy loop level updated : CurrTradeBuyLevel: 2317.0, CurrTradeSellLevel:2319.0 
+ 142433197 , 1 ordernew Target = 2318.0,new stoploss= 2321.0
+05/04/2024 20:05:55 Couple Buy trade executed @ XAUUSD @ 2317.99 target sl modified for sell order id 142433197 
+05/04/2024 20:07:26 Sell trade executed primary @ XAUUSD @ 2321.043, next buy=2318.0, next sell=2324.0 
+05/04/2024 20:09:32 sell secondy loop level updated : CurrTradeBuyLevel: 2315.0, CurrTradeSellLevel:2321.0 
+ 142435823 , 1 ordernew Target = 2315.0,new stoploss= 2324.0
+05/04/2024 20:09:32 Couple Buy trade executed @ XAUUSD @ 2317.969 target sl modified for sell order id 142435823 
+05/04/2024 20:10:40 Sell trade executed secondary @ XAUUSD @ 2321.016, next buy=2318.0, next sell=2324.0 
+05/04/2024 20:16:59 Sell trade executed secondary @ XAUUSD @ 2324.122, next buy=2321.0, next sell=2327.0 
+05/04/2024 20:20:05 sell secondy loop level updated : CurrTradeBuyLevel: 2318.0, CurrTradeSellLevel:2324.0 
+ 142451336 , 1 ordernew Target = 2321.0,new stoploss= 2330.0
+05/04/2024 20:20:05 Couple Buy trade executed @ XAUUSD @ 2320.99 target sl modified for sell order id 142451336 
+05/04/2024 20:20:46 sell secondy loop level updated : CurrTradeBuyLevel: 2315.0, CurrTradeSellLevel:2321.0 
+ 142440948 , 1 ordernew Target = 2318.0,new stoploss= 2327.0
+05/04/2024 20:20:46 Couple Buy trade executed @ XAUUSD @ 2317.999 target sl modified for sell order id 142440948 
+05/04/2024 20:24:57 Sell trade executed primary @ XAUUSD @ 2318.009, next buy=2317.0, next sell=2319.0 
+05/04/2024 20:25:19 Sell trade executed secondary @ XAUUSD @ 2319.026, next buy=2318.0, next sell=2320.0 
+05/04/2024 20:25:29 Sell trade executed secondary @ XAUUSD @ 2320.024, next buy=2319.0, next sell=2321.0 
+05/04/2024 20:26:58 sell secondy loop level updated : CurrTradeBuyLevel: 2318.0, CurrTradeSellLevel:2320.0 
+ 142467011 , 1 ordernew Target = 2319.0,new stoploss= 2322.0
+05/04/2024 20:26:58 Couple Buy trade executed @ XAUUSD @ 2318.974 target sl modified for sell order id 142467011 
+05/04/2024 20:27:03 sell secondy loop level updated : CurrTradeBuyLevel: 2317.0, CurrTradeSellLevel:2319.0 
+ 142466683 , 1 ordernew Target = 2318.0,new stoploss= 2321.0
+05/04/2024 20:27:03 Couple Buy trade executed @ XAUUSD @ 2317.989 target sl modified for sell order id 142466683 
+05/04/2024 20:28:24 Sell trade executed secondary @ XAUUSD @ 2319.032, next buy=2318.0, next sell=2320.0 
+05/04/2024 20:29:09 Sell trade executed secondary @ XAUUSD @ 2320.025, next buy=2319.0, next sell=2321.0 
+05/04/2024 20:29:25 sell secondy loop level updated : CurrTradeBuyLevel: 2318.0, CurrTradeSellLevel:2320.0 
+ 142470969 , 1 ordernew Target = 2319.0,new stoploss= 2322.0
+05/04/2024 20:29:25 Couple Buy trade executed @ XAUUSD @ 2318.993 target sl modified for sell order id 142470969 
+05/04/2024 20:29:43 sell secondy loop level updated : CurrTradeBuyLevel: 2317.0, CurrTradeSellLevel:2319.0 
+ 142470400 , 1 ordernew Target = 2318.0,new stoploss= 2321.0
+05/04/2024 20:29:43 Couple Buy trade executed @ XAUUSD @ 2317.974 target sl modified for sell order id 142470400 
+05/04/2024 20:30:10 sell secondy loop level updated : CurrTradeBuyLevel: 2316.0, CurrTradeSellLevel:2318.0 
+ 142466062 , 1 ordernew Target = 2316.0,new stoploss= 2319.0
+05/04/2024 20:30:10 Couple Buy trade executed @ XAUUSD @ 2316.949 target sl modified for sell order id 142466062 
+05/04/2024 20:31:32 Buy trade executed primary @ XAUUSD @ 2316.937, next buy=2317.0, next sell=2319.0 
+05/04/2024 20:31:32 Buy trade executed secondary @ XAUUSD @ 2316.937, next buy=2316.0, next sell=2318.0 
+05/04/2024 20:31:56 Sell trade executed primary @ XAUUSD @ 2317.472, next buy=2316.0, next sell=2318.0 
+05/04/2024 20:32:16 Sell trade executed secondary @ XAUUSD @ 2318.033, next buy=2317.0, next sell=2319.0 
+05/04/2024 20:32:27 sell secondy loop level updated : CurrTradeBuyLevel: 2316.0, CurrTradeSellLevel:2318.0 
+ 142474034 , 1 ordernew Target = 2316.0,new stoploss= 2319.0
+05/04/2024 20:32:27 Couple Buy trade executed @ XAUUSD @ 2316.989 target sl modified for sell order id 142474034 
+05/04/2024 20:32:54 sell secondy loop level updated : CurrTradeBuyLevel: 2315.0, CurrTradeSellLevel:2317.0 
+ 142473574 , 1 ordernew Target = 2315.0,new stoploss= 2318.0
+05/04/2024 20:32:54 Couple Buy trade executed @ XAUUSD @ 2315.966 target sl modified for sell order id 142473574 
+05/04/2024 20:33:21 Sell trade executed secondary @ XAUUSD @ 2317.024, next buy=2316.0, next sell=2318.0 
+05/04/2024 20:33:38 Sell trade executed secondary @ XAUUSD @ 2318.0, next buy=2317.0, next sell=2319.0 
+05/04/2024 20:34:25 Sell trade executed secondary @ XAUUSD @ 2319.026, next buy=2318.0, next sell=2320.0 
+05/04/2024 20:34:38 Sell trade executed secondary @ XAUUSD @ 2320.012, next buy=2319.0, next sell=2321.0 
+05/04/2024 20:35:43 Sell trade executed secondary @ XAUUSD @ 2321.027, next buy=2320.0, next sell=2322.0 
+05/04/2024 20:35:46 Sell trade executed secondary @ XAUUSD @ 2322.014, next buy=2321.0, next sell=2323.0 
+05/04/2024 20:36:04 Sell trade executed secondary @ XAUUSD @ 2323.018, next buy=2322.0, next sell=2324.0 
+05/04/2024 20:36:35 sell secondy loop level updated : CurrTradeBuyLevel: 2321.0, CurrTradeSellLevel:2323.0 
+ 142479491 , 1 ordernew Target = 2321.0,new stoploss= 2324.0
+05/04/2024 20:36:35 Couple Buy trade executed @ XAUUSD @ 2321.97 target sl modified for sell order id 142479491 

@@ -127,7 +127,7 @@ def mt_buy(symbol,lot,MagicNumber):
         }
         result = mt.order_send(request)
         order_id = result.order
-        print("result: ", result)
+
         return order_id
 
 def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
@@ -149,7 +149,7 @@ def mt_buy_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
             "type_filling": mt.ORDER_FILLING_IOC,
         }
     result = mt.order_send(request)
-    print("Brcket res", result)
+
     order_id = result.order
     print("result: ", result)
     return order_id
@@ -174,7 +174,7 @@ def mt_sell_bracket(symbol,lot,MagicNumber,sl,tp,reference_price):
             "type_filling": mt.ORDER_FILLING_IOC,
         }
     result = mt.order_send(request)
-    print("Brcket res",result)
+
     order_id = result.order
     print("result: ", result)
     return order_id
@@ -214,7 +214,7 @@ def mt_close_buy(symbol,lot,orderid,timestamp):
             "type_filling": mt.ORDER_FILLING_IOC,
         }
         result = mt.order_send(request)
-        print(result)
+
         orderlog = f"{timestamp} {result}"
         print(orderlog)
 
@@ -261,7 +261,7 @@ def changeslpl(ticket,pair,pos_type,SL,tp,ea_magic_number,volume,reference_price
         write_to_order_logs(Oederog)
     if pos_type=="SHORT":
         pos_type = mt.ORDER_TYPE_SELL
-        stoploss=reference_price+SL
+        stoploss=reference_price + SL
         target = reference_price - tp
         Oederog = f" { ticket } , {pos_type} ordernew Target = {target},new stoploss= {stoploss}"
         print(Oederog)
@@ -277,7 +277,7 @@ def changeslpl(ticket,pair,pos_type,SL,tp,ea_magic_number,volume,reference_price
     "price_open": price_open,
     "sl": stoploss,
     "tp": target,
-    "deviation": 20,
+    "deviation": 30,
     "magic": ea_magic_number,
     "comment": "python script open",
     "type_time": mt.ORDER_TIME_GTC,
@@ -287,7 +287,6 @@ def changeslpl(ticket,pair,pos_type,SL,tp,ea_magic_number,volume,reference_price
     print(request)
 #// perform the check and display the result 'as is'
     result = mt.order_send(request)
-    print("Result: ",result)
     return result
 
 

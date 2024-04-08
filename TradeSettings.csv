@@ -1,2 +1,2 @@
 Symbol,BuyBelow, NextBuyPts,SellAbove,NextSellPts,CoupleTradeDist,Stoploss,Target,Lotsize,MagicNumber
-BTCUSD,68700,100,68800,100,100,100,200,0.1,12345
+XAUUSD,2316,1,2317,1,1,1,2,0.1,12345
